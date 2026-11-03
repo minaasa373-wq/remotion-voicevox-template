@@ -21,3 +21,12 @@ kuro_zunda:
   position: right
   color: "#333333"
   defaultPauseAfter: 15
+
+# ゆっくり風の四国めたん（表情差分あり）
+# 画像: public/images/metan_yukkuri/
+metan_yukkuri:
+  name: 四国めたん（ゆっくり）
+  speakerId: 2
+  position: left
+  color: "#FF1493"
+  defaultPauseAfter: 15
