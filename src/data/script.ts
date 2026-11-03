@@ -39,7 +39,8 @@ export interface ScriptLine {
   voiceFile: string;
   durationInFrames: number;
   pauseAfter: number;
-  emotion?: "normal" | "happy" | "surprised" | "thinking" | "sad";
+  // 使える表情はキャラクターごとに異なる（public/images/{キャラ}/ の *_open.png が目安）。画像がない表情は normal にフォールバックする
+  emotion?: "normal" | "happy" | "surprised" | "thinking" | "sad" | (string & {});
   visual?: VisualContent;
   se?: SoundEffect;
 }

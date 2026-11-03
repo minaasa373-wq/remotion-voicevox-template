@@ -66,7 +66,7 @@ export interface ScriptLine {
   voiceFile: string;        // 例: "01_zundamon.wav"
   durationInFrames: number; // 音声生成後に更新
   pauseAfter: number;       // セリフ後の間（フレーム数）
-  emotion?: string;         // "normal" | "happy" | "surprised" | "thinking"
+  emotion?: string;         // "normal" | "happy" | "surprised" | "thinking" | "sad" ほか（キャラ別の追加表情は下記）
 }
 ```
 
@@ -450,6 +450,12 @@ npm install
 - 嬉しいとき、褒めるとき → `happy`
 - 考え込むとき、説明を聞くとき → `thinking`
 - 残念なとき → `sad`
+
+**キャラクター別の追加表情**（ゆっくり風の画像）:
+- 四国めたん（`metan`）: `angry`（怒り）、`troubled`（困り顔・苦笑い）、`cry`（号泣）、`dizzy`（混乱）、`panic`（大慌て）、`calm`（すまし顔）
+- ずんだもん（`zundamon`）: `angry`（ぷんぷん）、`sparkle`（キラキラ・わくわく）、`panic`（大慌て）、`lazy`（ジト目・ドヤ顔）、`exhausted`（ぐったり）、`nervous`（焦り・ごまかし）、`calm`（穏やか）、`gray`（絶句）、`grit_cry`（泣きながら歯を食いしばる）、`grit`（冷や汗）
+- キャラにない表情名は自動で`normal`にフォールバックする
+- 使える表情は`public/images/{キャラ}/`の`*_open.png`か、`GET /api/metadata/all`で確認できる
 
 ```typescript
 // NG: 表情を多用しすぎ
