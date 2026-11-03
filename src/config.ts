@@ -52,7 +52,7 @@ export const DEFAULT_CHARACTERS: CharacterConfig[] = [
       mouthOpen: "images/metan/mouth_open.png",
       mouthClose: "images/metan/mouth_close.png",
     },
-    flipX: true, // 元画像が左向きなので右向きに反転
+    flipX: false,
   },
   {
     id: "zundamon",
