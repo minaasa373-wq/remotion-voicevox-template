@@ -44,13 +44,65 @@ export const SETTINGS = {
 
 // キャラクターごとの利用可能な画像ファイル
 export const AVAILABLE_IMAGES: Record<string, string[]> = {
-  "metan": [
+  "kuro_zunda": [
     "mouth_close.png",
     "mouth_open.png"
   ],
-  "zundamon": [
+  "metan": [
+    "angry_close.png",
+    "angry_open.png",
+    "calm_close.png",
+    "calm_open.png",
+    "cry_close.png",
+    "cry_open.png",
+    "dizzy_close.png",
+    "dizzy_open.png",
+    "happy_close.png",
+    "happy_open.png",
     "mouth_close.png",
-    "mouth_open.png"
+    "mouth_open.png",
+    "panic_close.png",
+    "panic_open.png",
+    "sad_close.png",
+    "sad_open.png",
+    "surprised_close.png",
+    "surprised_open.png",
+    "thinking_close.png",
+    "thinking_open.png",
+    "troubled_close.png",
+    "troubled_open.png"
+  ],
+  "zundamon": [
+    "angry_close.png",
+    "angry_open.png",
+    "calm_close.png",
+    "calm_open.png",
+    "exhausted_close.png",
+    "exhausted_open.png",
+    "gray_close.png",
+    "gray_open.png",
+    "grit_close.png",
+    "grit_cry_close.png",
+    "grit_cry_open.png",
+    "grit_open.png",
+    "happy_close.png",
+    "happy_open.png",
+    "lazy_close.png",
+    "lazy_open.png",
+    "mouth_close.png",
+    "mouth_open.png",
+    "nervous_close.png",
+    "nervous_open.png",
+    "panic_close.png",
+    "panic_open.png",
+    "sad_close.png",
+    "sad_open.png",
+    "sparkle_close.png",
+    "sparkle_open.png",
+    "surprised_close.png",
+    "surprised_open.png",
+    "thinking_close.png",
+    "thinking_open.png"
   ]
 };
 
